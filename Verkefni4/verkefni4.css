@@ -1,0 +1,121 @@
+*{
+	list-style: none;
+	text-decoration: none;
+}
+body, html, .page {
+    height: 100%;
+}
+section {
+    min-height: 100%;
+}
+header{
+	width: 100%;
+	background-color: lightgray;
+	position: fixed;
+	left: 0;
+	top: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  z-index: 50;
+}
+header h1{
+	text-align: center;
+	font-size: 2.5em;
+	color: #000000;
+  margin: 0;
+  margin-top: .5em;
+}
+header h1, hr{
+	display: none;
+}
+.input1{
+  display: none;
+}
+.checkbox{
+  font-size: 2.3em;
+  cursor: pointer;
+}
+.input1:checked ~ nav{
+  height: 17.8em;
+  transition: all 1s ease;
+}
+.menu{
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.topmenu {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: #cccccc;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  }
+  .topmenu li {
+    list-style-type: none;
+    padding: .6em 1em;
+    font-size: 1.5em;
+    text-align: center;
+    transition: background-color .2s ease; 
+  }
+  .topmenu li{
+    color: #404040;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .topmenu li:active{
+    background-color: #000;
+    color: #fff;
+  }
+.rand {
+    margin: 0;
+    padding-top: 3em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.page{
+    margin: 0;
+}
+#i0 {
+        transition: 2s;
+    }
+
+
+/*48 em og yfir*/
+
+@media screen and (min-width: 48em) {
+    #i0 {
+        background-color: fuchsia;
+        transition: 2s;
+    }
+    .topmenu {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        background-color: #cccccc;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .checkbox {
+        display: none;
+    }
+    .menu{
+        height: 3.59em;
+        transition: all 1s ease;
+    }
+    .input1:checked ~ nav{
+        height: 3.59em;;
+        transition: all 1s ease;
+    }
+    .topmenu li:hover{
+        background-color: #000;
+        color: #fff;
+        transition: .5s;
+    }
+}

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="verkefni4.css">
+        <link rel="stylesheet" href="normalize.css">
+        <title>Verkefni 4</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+			<input class="input1" type="checkbox" id="toggle">
+        	<label class="checkbox" for="toggle">&#9776; Menu</label>
+			<nav class="menu">
+				<ul class="topmenu">
+                    <a href="#i0"><li>Heim</li></a>
+					<a href="#i1"><li>Síða 1</li></a>
+					<a href="#i2"><li>Síða 2</li></a>
+					<a href="#i3"><li>Síða 3</li></a>
+					<a href="#i4"><li>Síða 4</li></a>
+				</ul>
+			</nav>
+		</div>
+        </header>
+        <div id="i0" class="page">
+            <h1 class="rand">Velkominn. Þú hefur verið valinn til þess að skoða síðuna mína.</h1>
+        </div>
+        <div id="i1" class="page">
+            <section style="background-color:yellow"></section>
+        </div>
+        <div id="i2" class="page">
+            <section style="background-color:orange"></section>
+        </div>
+        <div id="i3" class="page">
+            <section style="background-color:red"></section>
+        </div>
+        <div id="i4" class="page">
+            <section style="background-color:blue"></section>
+        </div>
+    </body>
+    <footer>
+    </footer>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</html>
