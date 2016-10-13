@@ -100,7 +100,7 @@ header h1, hr{
         background-color: #cccccc;
         padding-left: 0;
         display: flex;
-        flex-direction: row;
+        flex-flow: row;
     }
     .checkbox {
         display: none;
@@ -113,9 +113,15 @@ header h1, hr{
         height: 3.59em;;
         transition: all 1s ease;
     }
+    .topmenu a {
+        width: 20%;
+    }
     .topmenu li:hover{
         background-color: #000;
         color: #fff;
         transition: .5s;
+    }
+    .eitthvad {
+        flex-grow: 2;
     }
 }
