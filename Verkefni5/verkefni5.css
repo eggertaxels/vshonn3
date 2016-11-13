@@ -1,0 +1,289 @@
+*{
+	list-style: none;
+	text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body, html, .page {
+    height: 100%;
+}
+section {
+    min-height: 100%;
+}
+header{
+	width: 100%;
+	background-color: #000000;
+	position: fixed;
+	left: 0;
+	top: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  z-index: 50;
+}
+header h1{
+	text-align: center;
+	font-size: 2.5em;
+	color: #000000;
+  margin: 0;
+  margin-top: .5em;
+}
+header label{
+    color: #ffba00;
+}
+header h1, hr{
+	display: none;
+}
+.input1{
+  display: none;
+}
+.checkbox{
+  font-size: 2.3em;
+  cursor: pointer;
+}
+.input1:checked ~ nav{
+  height: 17.8em;
+  transition: all 1s ease;
+}
+.menu{
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.topmenu {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: #ffba00;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  }
+  .topmenu li {
+    list-style-type: none;
+    padding: .6em 1em;
+    font-size: 1.5em;
+    text-align: center;
+    transition: background-color .2s ease; 
+  }
+  .topmenu li{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .topmenu li:active{
+    background-color: #000;
+    color: #fff;
+  }
+.rand {
+    margin: 0;
+    padding-top: 3em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.video{
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    border: 3px solid red;
+}
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
+#i2{
+    height: auto;
+}
+.page{
+    margin: 0;
+}
+.page h1{
+    text-align: center;
+}
+#i0 {
+        transition: 2s;
+    }
+section h1{
+    padding: 0;
+    margin: 0;
+    padding-top: 3em;
+}
+/******* Myndir á milli************/
+.parallax{
+	height: 45vh;
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+    
+}
+.firstImage{
+	background-image: url(img/harpa3.jpg);
+}
+.thirdImage{
+	background-image: url(img/harpa2.jpg);
+}
+.fourthImage{
+	background-image: url(img/harpa4.jpg);
+}
+.secondImage{
+	background-image: url(img/harpa.jpg);
+    filter: blur(2px);
+}
+/*********Myndir af sölum**********/
+.img {
+    border: 1px solid #ccc;
+    background-color: black;
+}
+.img div{
+    color: white;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+.responsive {
+    width: 100%;
+}
+/*********Form*********************/
+
+.askrift h1{
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: .3em;
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+}
+.askrift fieldset{
+	border: 3px solid black;
+	background-color: #ffba00;
+	font-size: 1.7em;
+    border-radius: 5px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: .7em;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: border 0.5s ease;
+}
+input[type=text]:focus{
+    border: 3px solid black;
+    transition: border 0.5s ease;
+}
+input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: .7em;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: border 0.5s ease;
+}
+input[type=email]:focus{
+    border: 3px solid black;
+    transition: border 0.5s ease;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+input[type=submit]:active {
+    background-color: #4a4444;
+}
+
+/*48 em og yfir*/
+
+@media screen and (min-width: 48em) {
+    #i0 {
+        background-color: none;
+        transition: 2s;
+    }
+    .topmenu {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        background-color: #000000;
+        padding-left: 0;
+        display: flex;
+        flex-flow: row;
+    }
+    .topmenu li{
+        color: #ffba00;
+    }
+    .checkbox {
+        display: none;
+    }
+    .menu{
+        height: 3.59em;
+        transition: all 1s ease;
+    }
+    .input1:checked ~ nav{
+        height: 3.59em;;
+        transition: all 1s ease;
+    }
+    .topmenu a {
+        width: 20%;
+    }
+    .topmenu li{
+        transition: .5s;
+    }
+    .topmenu li:hover{
+        background-color: #ffba00;
+        color: black;
+        transition: .5s;
+    }
+    /*********video*************/
+    .video{
+    width: 50%;
+    height: 60%;
+    margin: 0 auto;
+    border: 3px solid red;
+    }
+    .video iframe{
+        width: 100%;
+        height: 100%;
+    }
+    /*******eitthvað******/
+    .eitthvad {
+        flex-grow: 2;
+    }
+    .askrift{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    /*************myndir salir*************/
+    .responsive{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .img:hover img{
+        border-radius: 50%;;
+        transition: 1s ease;
+    }
+}

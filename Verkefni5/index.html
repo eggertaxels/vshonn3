@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="verkefni5.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Verkefni 5</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Hallo</h1>
+            <div>
+                <input class="input1" type="checkbox" id="toggle">
+                <label class="checkbox" for="toggle">&#9776; Menu</label>
+                <nav class="menu">
+                    <ul class="topmenu">
+                        <a href="#i0"><li>Heim</li></a>
+                        <a href="#i1"><li>Viðburðir</li></a>
+                        <a href="#i2"><li>Salir</li></a>
+                        <a href="#i3"><li>Staðsetning</li></a>
+                        <a href="#i4"><li>Skráning</li></a>
+                    </ul>
+                </nav>
+		    </div>
+        </header>
+        <div id="i0" class="page">
+            <h1 class="rand">Velkominn á upplýsingasíðu hörpu.</h1>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/ZMpZazOj95I" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="parallax fourthImage"></div>
+        <div id="i1" class="page">
+            <section style="background-color:yellow">
+                <h1>Síða 1</h1>
+            </section>
+        </div>
+        <div class="parallax thirdImage"></div>
+        <div id="i2" class="page">
+            <section style="background-color:orange">
+                <h1>Salir</h1>
+                    <div class="responsive">
+                      <div class="img">
+                          <img src="http://www.salir.is//pictures/org_images/Harpa_bjortuloft_veislusalir.jpg">
+                        <div class="desc">Björtuloft: 100-350 manns</div>
+                      </div>
+                    </div>
+                    <div class="responsive">
+                      <div class="img">
+                          <img src="http://www.salir.is//pictures/org_images/harpa_veislusalir_loft.jpg">
+                        <div class="desc">Háaloft: 100 manns</div>
+                      </div>
+                    </div>
+                    <div class="responsive">
+                      <div class="img">
+                          <img src="http://www.salir.is/pictures/org_images/silfurberg_veisla.jpg">
+                        <div class="desc">Silfurberg: 500-900 manns</div>
+                      </div>
+                    </div>
+                    <div class="responsive">
+                      <div class="img">
+                          <img src="http://www.salir.is//pictures/org_images/Eldborg-radstefna.jpg">
+                        <div class="desc">Eldborg: 1800 manns</div>
+                      </div>
+                    </div>
+                    <div class="responsive">
+                      <div class="img">
+                          <img src="http://www.salir.is/pictures/org_images/Harpa_nordurljos_brudkaup2.jpg">
+                        <div class="desc">Norðurljós: 280-700 manns</div>
+                      </div>
+                    </div>
+                    <div style="padding-bottom:1em" class="responsive">
+                      <div class="img">
+                          <img src="http://www.salir.is//pictures/org_images/Kaldalon_Harpa.jpg">
+                        <div class="desc">Kaldalón: 195 manns</div>
+                      </div>
+                    </div>
+                   
+            </section>
+        </div>
+        <div class="parallax firstImage"></div>
+        <div id="i3" class="page">
+            <section style="background-color:red">
+                <h1>staðsetning</h1>
+                
+            </section>
+        </div>
+        <div class="parallax secondImage"></div>
+        <div id="i4" class="page">
+            <section style="background-color:blue">
+                <section>
+                    <div class="askrift">
+                        <h1>Skráðu þig í leik og þú gætir unnið 2 miða á sinfoníutónleika.</h1>
+                        <form action="takk.php" method="post">
+                            <fieldset>
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John" required>
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Cena" required>
+
+                                <label for="mail">Email address</label>
+                                <input type="email" name="email-adress" placeholder="example@gmail.com" required>
+
+                                <label for="address">Address</label>
+                                <input type="text" name="home_address" placeholder="Spooner Street 911" required>
+
+                                <label for="town">City</label>
+                                <input type="text" name="city" placeholder="Reykjavík" required>
+
+                                <br><br>
+
+                                <input type="submit" value="SUBMIT">
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </body>
+</html>
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
