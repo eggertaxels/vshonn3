@@ -83,6 +83,7 @@ header h1, hr{
     text-align: center;
     font-size: 1.5em;
 }
+/******video*****/
 .video{
     width: 100%;
     height: 50%;
@@ -93,6 +94,26 @@ header h1, hr{
     width: 100%;
     height: 100%;
 }
+/*****Kort******/
+.kort{
+    width: 90%;
+    margin: 0 auto;
+}
+#i3{
+    height: auto;
+}
+#i1{
+    height: auto;
+}
+#i1 img{
+    width: 100%;
+}
+.setja_midja{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*****annað*****/
 #i2{
     height: auto;
 }
@@ -216,6 +237,16 @@ input[type=submit] {
 input[type=submit]:active {
     background-color: #4a4444;
 }
+/*30 em og yfir*/
+@media screen and (min-width: 30em) {
+    #i1 img{
+        width: 48%;
+    }
+    .setja_midja{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 /*48 em og yfir*/
 
@@ -260,16 +291,20 @@ input[type=submit]:active {
     }
     /*********video*************/
     .video{
-    width: 50%;
-    height: 60%;
-    margin: 0 auto;
-    border: 3px solid red;
+        width: 50%;
+        height: 60%;
+        margin: 0 auto;
+        border: 3px solid red;
     }
     .video iframe{
         width: 100%;
         height: 100%;
     }
+    /*****Kort******/
     /*******eitthvað******/
+    p{
+        text-align: center;
+    }
     .eitthvad {
         flex-grow: 2;
     }
@@ -285,5 +320,12 @@ input[type=submit]:active {
     .img:hover img{
         border-radius: 50%;;
         transition: 1s ease;
+    }
+    #i1 img{
+        width: 33%;
+    }
+    .setja_midja{
+        width: 70%;
+        margin: 0 auto;
     }
 }
